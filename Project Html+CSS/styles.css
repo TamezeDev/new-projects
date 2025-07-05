@@ -1,0 +1,236 @@
+/* RAIZ */
+:root {
+  --menuColor: RGB(199, 186, 169);
+  --logoColor: blue;
+  --primaryColor: #78d9ff;
+  --secondaryColor: #003958;
+  --thirdColor: #207ba4;
+  --prymaryLetter: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* GENERAL */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+body {
+  background: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* FUENTES */
+@font-face {
+  font-family: "BebasNeue";
+  src: url(./fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(./fonts/websymbols-regular-webfont.eot);
+  src: url(./fonts/websymbols-regular-webfont.eot?iefix)
+      format(embbeded-opentype),
+    url(./fonts/websymbols-regular-webfont.woff) format(woff),
+    url(./fonts/websymbols-regular-webfont.ttf) format(truetype),
+    url(./fonts/websymbols-regular-webfont.svg#WebSymbolsRegurlar) format(svg);
+  font-weight: normal;
+  font-style: normal;
+}
+/* ANIMACIONES */
+@keyframes showCategory {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes blink {
+  0% {
+    border: 5px solid #37bcf9;
+  }
+  50% {
+    border: 5px solid #ffff00;
+  }
+  100% {
+    border: 5px solid #37bcf9;
+  }
+}
+@keyframes fontLarge {
+  0% {
+    font-size: 20px;
+  }
+  50% {
+    font-size: 25px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+/* CABECERA */
+#cabecera {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  background-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+#logo {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  animation: showCategory 500ms linear;
+}
+#logo > a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+#logo img:nth-child(3) {
+  height: 100px;
+  margin: 30px;
+}
+
+#logo > a > img:first-child {
+  height: 30px;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+#logo > a > div > h1 {
+  font-family: BebasNeue;
+  font-size: 70px;
+  text-decoration: none;
+  color: var(--logoColor);
+  align-items: center;
+  text-shadow: 1px 4px 1px black;
+}
+#logo > a > div > p {
+  color: var(--logoColor);
+  font-family: var(--prymaryLetter);
+  font-size: 18px;
+
+  margin-left: 30px;
+}
+/* BUSCADOR */
+#buscador {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buscador > form > input[type="text"] {
+  width: 500px;
+  height: 33px;
+  font-family: var(--prymaryLetter);
+  color: #6b6b6be8;
+  padding-left: 10px;
+  font-size: 15px;
+  border: solid 1px var(--primaryColor);
+  box-shadow: 1px 1px 4px #ccc inset;
+}
+#buscador > form > input[type="text"]:focus {
+  color: var(--secondaryColor);
+  transition: all 400ms;
+}
+#buscador > form > input[type="button"] {
+  font-family: WebSymbolsRegular;
+  color: var(--primaryColor);
+  border: none;
+  margin-left: -30px;
+  font-size: 20px;
+  background-color: white;
+}
+#buscador > form > input[type="button"]:hover {
+  cursor: pointer;
+}
+/* LOGIN/COMPRA */
+#compra {
+  display: flex;
+  width: 25%;
+  height: 200px;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+#compra > a > img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+#compra > a {
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+/* BARRA DE NAVEGACIÓN */
+#menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#menu > ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px var(--primaryColor);
+}
+#menu > ul > a > li {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#menu > ul > a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #003958;
+}
+#menu > ul > a:last-child {
+  text-transform: uppercase;
+  background-color: #78d9ff;
+}
+
+#menu > ul > a:hover {
+  background-color: var(--primaryColor);
+
+  animation: fontLarge 1s linear;
+}
+
+/* ARTÍCULO PRINCIPAL */
+article {
+  width: 100%;
+  height: 200px;
+  background-color: var(--thirdColor);
+}
+article > h3 {
+  color: white;
+  margin: 0% 1% 1% 1%;
+  padding: 1%;
+  font-family: var(--prymaryLetter);
+}
+article > p {
+  color: white;
+  font-size: 20px;
+  text-indent: 30px;
+  margin: 0px 40px 40px 40px;
+  font-family: var(--prymaryLetter);
+  text-align: left;
+}
+article > p > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--secondaryColor);
+}
