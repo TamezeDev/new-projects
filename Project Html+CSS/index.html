@@ -1,94 +1,314 @@
 <html>
-  <!-- Inicio de la cabecera(metadatos) -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ofertas en componentes de pc" />
-    <meta
-      name=" keywords"
-      content="videoconsola, videojuegos, componentes, accesorios, tarjetas gráficas, placas base, laptops"
-    />
-    <link rel="stylesheet" data="text/css" href="./styles.css" />
-    <link rel="icon" type="favicon/x-icon" href="./img/favicon.png" />
-    <title>
-      PC Upgrade - Componentes de sobremesa, portátiles, videoconsola y más
-    </title>
-  </head>
-  <!-- Fin de los metadatos -->
-  <body>
-    <!-- Inicio de la cabecera -->
-    <header id="cabecera">
-      <!-- Inicio del logotipo -->
-      <section id="logo">
-        <a href="./index.html">
-          <img
-            class="favicon"
-            src="./img/favicon.png"
-            alt="logotipo de la empresa"
-          />
-          <div>
-            <h1>PC Upgrade</h1>
-            <p>Actualízate en confianza</p>
-          </div>
-          <img src="./img/pc.jpg" alt="ordenador de sobremesa" />
-        </a>
-      </section>
-      <!-- Fin del logotipo -->
-      <!-- Inicio del buscador -->
-      <section id="buscador">
-        <form action="" method="post">
-          <input type="text" placeholder="Busca en nuestro catálogo" />
-          <input type="button" class="icon" value="L" />
-        </form>
-      </section>
-      <!-- Fin del buscador -->
-      <!-- Inicio bloque logo/cesta -->
-      <section id="compra">
-        <a href="#"
-          ><img src="./img/login.png" alt="icono de acceso clientes" />Acceso a
-          clientes</a
-        >
-        <a href="#"
-          ><img src="./img/carrito.png" alt="cesta de la compra" />Ver cesta</a
-        >
-      </section>
-      <!-- Fin de logo/cesta -->
-      <!-- Inicio del menú de navegación -->
-      <nav id="menu">
-        <ul>
-          <a href="sobremesa.html"><li>Componentes de sobremesa</li></a>
-          <a href="laptops.html"><li>Laptops</li></a>
-          <a href=""><li>Gaming</li></a>
-          <a href=""><li>Smartphones</li></a>
-          <a href=""><li>E-Book</li></a>
-          <a href=""><li>premium pc</li></a>
-        </ul>
-      </nav>
-      <!-- Fin del menú de navegación -->
-    </header>
-    <!-- Fin de la cabecera -->
+<!-- Inicio de la cabecera(metadatos) -->
 
-    <!-- Inicio del contenido principal -->
-    <main>
-      <!-- Inicio del artículo -->
-      <article>
-        <h3>Componentes PC</h3>
-        <p>
-          Todos los componentes de PC y piezas que necesitas comprar para
-          montarte tu ordenador a medida o actualizar el que ya tienes están en
-          PC Upgrade a un precio difícil de creer. En nuestra tienda online solo
-          trabajamos duro para ofrecerte los mejores precios, envío inmediato y
-          las máximas garantías. Navega por las diferentes secciones en busca de
-          lo que necesites y, si te surge alguna duda, contáctanos sin
-          compromiso para asesorarte. Así mismo, te invitamos a ver nuestras
-          <a href="upgrade.html">PREMIUM PC</a>, ordenadores ya ensamblados con
-          las mejores piezas y testados por profesionales para empezar a
-          disfrutar sin complicaciones.
-        </p>
-      </article>
-      <section id="categorias">
-        <h3>Categorías detacadas</h3>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ofertas en componentes de pc" />
+  <meta name=" keywords"
+    content="videoconsola, videojuegos, componentes, accesorios, tarjetas gráficas, placas base, laptops" />
+  <link rel="stylesheet" data="text/css" href="./styles.css" />
+  <link rel="icon" type="favicon/x-icon" href="./img/favicon.png" />
+  <title>
+    PC Upgrade - Componentes de sobremesa, portátiles, videoconsola y más
+  </title>
+</head>
+<!-- Fin de los metadatos -->
+
+<body>
+  <!-- Inicio de la cabecera -->
+  <header id="cabecera">
+    <!-- Inicio del logotipo -->
+    <section id="logo">
+      <a href="./index.html">
+        <img class="favicon" src="./img/favicon.png" alt="logotipo de la empresa" />
+        <div>
+          <h1>PC Upgrade</h1>
+          <p>Actualízate en confianza</p>
+        </div>
+        <img src="./img/pc.jpg" alt="ordenador de sobremesa" />
+      </a>
+    </section>
+    <!-- Fin del logotipo -->
+    <!-- Inicio del buscador -->
+    <section id="buscador">
+      <form action="" method="post">
+        <input type="text" placeholder="Busca en nuestro catálogo" />
+        <input type="button" class="icon" value="L" />
+      </form>
+    </section>
+    <!-- Fin del buscador -->
+    <!-- Inicio bloque logo/cesta -->
+    <section id="compra">
+      <a href="./login.html"><img src="./img/login.png" alt="icono de acceso clientes" />Acceso a
+        clientes</a>
+      <a href="#"><img src="./img/carrito.png" alt="cesta de la compra" />Cesta</a>
+    </section>
+    <!-- Fin de logo/cesta -->
+  </header>
+  <!-- Fin de la cabecera -->
+  <!-- Inicio del contenido principal -->
+  <main>
+    <!-- Inicio del menú de navegación -->
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="componentes.html">Componentes</a>
+          <ul class="submenu">
+
+            <li><a href="procesadores.html">Procesadores</a></li>
+            <li><a href="placas.html">Placas base</a></li>
+            <li><a href="ram.html">Memorias RAM</a></li>
+            <li><a href="graficas.html">Tarjetas gráficas</a></li>
+            <li><a href="almacenamiento.html">Almacenamiento</a></li>
+            <li><a href="alimentacion.html">Fuentes de alimentación</a></li>
+            <li><a href="software.html">Software</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="laptops.html">Laptops</a>
+          <ul class="submenu">
+            <li><a href="laptop_estudio.html">Portátiles para estudiar y trabajar</a></li>
+            <li><a href="laptop_graficos.html">Portátiles para editar gráficos y vídeos</a></li>
+            <li><a href="ultrabook.html">Ultrabooks</a></li>
+          </ul>
+        </li>
+        <li><a href="gaming.html">Gaming</a>
+          <ul class="submenu">
+            <li><a href="Pcgaming.html">Ordenadores Gaming</a></li>
+            <li><a href="pergaming.html">Periféricos gaming</a></li>
+            <li><a href="simgaming.html">Simulación gaming</a></li>
+          </ul>
+        </li>
+        <li><a href="">Smartphones</a>
+          <ul class="submenu">
+            <li><a href="xiaomi.html">Xiaomi</a></li>
+            <li><a href="iphone.html">Iphone</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="oppo.html">Oppo</a></li>
+            <li><a href="realme.html">Realme</a></li>
+            <li><a href="huawei.html">Huawei</a></li>
+            <li><a href="Oneplus.html">Oneplus</a></li>
+          </ul>
+        </li>
+        <li><a href="">Videoconsolas</a>
+          <ul class="submenu">
+            <li><a href="ps5.html">PS5</a></li>
+            <li><a href="switch.html">Nintendo Switch</a></li>
+            <li><a href="xbox.html">Xbox series</a></li>
+            <li><a href="graficas.html">Tarjetas gráficas</a></li>
+            <li><a href="portatiles.html">Consolas portátiles</a></li>
+            <li><a href="alimentacion.html">Zona retro/arcade</a></li>
+            <li><a href="videojuegos.html">Videojuegos</a></li>
+          </ul>
+        </li>
+        <li><a href="">premium pc</a></li>
+      </ul>
+    </nav>
+    <!-- Fin del menú de navegación -->
+
+
+    <!-- Inicio del artículo -->
+    <article>
+      <h3>Componentes PC</h3>
+      <p>
+        Todos los componentes de PC y piezas que necesitas comprar para
+        montarte tu ordenador a medida o actualizar el que ya tienes están en
+        PC Upgrade a un precio difícil de creer. En nuestra tienda online solo
+        trabajamos duro para ofrecerte los mejores precios, envío inmediato y
+        las máximas garantías. Navega por las diferentes secciones en busca de
+        lo que necesites y, si te surge alguna duda, contáctanos sin
+        compromiso para asesorarte. Así mismo, te invitamos a ver nuestras
+        <a href="upgrade.html">PREMIUM PC</a>, ordenadores ya ensamblados con
+        las mejores piezas y testados por profesionales para empezar a
+        disfrutar sin complicaciones.
+      </p>
+    </article>
+    <!-- FIn del artículo -->
+    <!-- Inicio de las categorías principales -->
+    <section id="categorias">
+      <h3>Categorías detacadas</h3>
+      <div><a href=""><img src="./img/procesador.png" alt="icono de un microprocesador" />procesadores</a></div>
+      <div><a href=""><img src="./img/motherboard.png" alt="icono de una placa base" />placas base</a></div>
+      <div><a href=""><img src="./img/ram.png" alt="icono de un módulo de memoria RAM" />memorias RAM</a></div>
+      <div><a href=""><img src="./img/gpu.png" alt="icono de una trajeta gráfica" />tarjetas gráficas</a></div>
+      <div><a href=""><img src="./img/hardDrive.png" alt="icono de un disco duro" />almacenamiento</a></div>
+      <div><a href=""><img src="./img/power.png" alt="icono de una fuente de alimentación" />fuentes de alimentación</a>
+      </div>
+      <div><a href=""><img src="./img/box.png" alt="icono de una caja de ordenador" />cajas
+          de ordenador</a></div>
+      <div><a href=""><img src="./img/fan.png" alt="icono de ventiladores" />ventilación</a></div>
+      <div><a href=""><img src="./img/record.png" alt="icono de una grabadora" />grabadoras
+          DVD / BLUE-RAY</a></div>
+      <div><a href=""><img src="./img/software.png" alt="icono de unos videojuegos" />software</a></div>
+    </section>
+    <!-- Fin de las categorías principales -->
+    <!-- Inicio de las novedades -->
+    <section id="novedades">
+      <h3>Novedades</h3>
+      <div><a href="motherboard1.html"><img src="./img/motherboard1.jpg"
+            alt="Placa base Gigabyte B650M D3HP - Placa base AM5 Micro-ATX ">Gigabyte B650M D3HP - Placa base AM5
+          Micro-ATX <p>112.89 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href="cpu1.html"><img src="./img/cpu1.jpg" alt="Microprocesador AMD Ryzen 7 7800X3D - Procesador AM5 ">AMD
+          Ryzen 7 7800X3D - Procesador AM5<p>429.89 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href="cooler1.html"><img src="./img/cooler1.jpg"
+            alt="Refrigeración Gigabyte Gaming 240 Ice - Refrigeración líquida 240mm">Gigabyte Gaming 240 Ice -
+          Refrigeración líquida 240mm<p>84.91 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href="gpu1.html"><img src="./img/gpu1.jpg"
+            alt="Tarjeta gráfica Asus TUF Gaming GeForce RTX 5080 16GB GDDR7 OC Edition">Asus TUF Gaming GeForce RTX
+          5080 16GB GDDR7 OC Edition - Tarjeta gráfica<p>1544.90€</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href="gpu2.html"><img src="./img/gpu2.jpg"
+            alt="Tarjeta gráfica Gigabyte Radeon RX 7600 Gaming OC 8GB">Gigabyte Radeon RX 7600 Gaming OC 8GB - Tarjeta
+          gráfica<p>281.91 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href=power1.html"><img src="./img/power1.jpg" alt="Fuente de alimentación P650SS Ice ATX 3.0">Gigabyte
+          P650SS Ice ATX 3.0 - Fuente de alimentación 650W<p>49.90 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href=ram1.html"><img src="./img/ram1.jpg"
+            alt="Memoria Ram Acer Predator Vesta II RGB 32GB (2x16GB) DDR5 6000MHz CL32 - Memoria RAM">Acer Predator
+          Vesta II RGB 32GB (2x16GB) DDR5 6000MHz CL32 - Memoria RAM<p>139.89 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+      <div><a href=hardDrive1.html"><img src="./img/hardDrive1.jpg"
+            alt="Disco duro Kingston NV3 1TB - Disco duro SSD M.2 NVMe Gen4.0">Kingston NV3 1TB - Disco duro SSD M.2
+          NVMe Gen4.0<p>56.89 €</p></a>
+        <div class="carro"><a href="carrito.html">Añadir al carrito</a></div>
+      </div>
+    </section>
+  </main>
+  <!-- Fin del contenido pricipal -->
+  <!-- Inicio de los spans -->
+  <section id="anuncio">
+    <span id="span1">
+      <h3>Compra componentes y piezas para tu ordenador a precios Upgrade</h3>
+      <p>Tiendas de piezas para PC hay muchas, pero en PC Upgrade, además de producto y precio te ofrecemos servicio,
+        atención y la confianza de saber que estás tratando con un equipo con más de 20 años de experiencia en el sector
+        (y sumando). Como especialistas en el montaje de Pc’s a medida, conocemos los componentes y podemos recomendarte
+        aquél que más se ajuste a tus necesidades.</p>
+      <h3>¿Qué componentes se necesitan para montar un PC?</h3>
+      <p>Para ensamblar un PC son necesarias una serie de piezas obligatorias que garanticen el funcionamiento del
+        mismo. Estas son:</p>
+
+      <p><strong>Placa base:</strong> como su propio nombre indica, la placa es fundamental para el montaje del
+        ordenador, pues determina qué componentes podrán incorporarse y con qué conexiones contará la máquina.</p>
+
+      <p><strong>Procesador o CPU:</strong>ya sea Intel o AMD, el "micro" constituye el cerebro del PC, pues es capaz de
+        gestionar los recursos y tareas.</p>
+
+      <p><strong>Tarjeta gráfica:</strong> si la CPU no lleva gráficos integrados o si se van a realizar tareas que
+        exijan un mejor rendimiento gráfico (juegos, diseño, render...), este componente es primordial.</p>
+
+      <p><strong>Memoria RAM</strong> es la memoria más rápida del sistema, cumpliendo el cometido de gestionar las
+        aplicaciones en marcha en ese momento.</p>
+
+      <p><strong>Almacenamiento:</strong>bien sea SSD o disco duro HDD, el ordenador requiere de espacio para almacenar
+        archivos.</p>
+
+      <p><strong>Fuente de alimentación:</strong> es la encargada de proporcionar energía al conjunto de componentes del
+        PC.</p>
+
+      <p><strong>Caja:</strong>también llamada chasis, gabinete o torre, es el lugar en el que se ensamblan todos las
+        piezas. También juega un papel fundamental a la hora de protegerlo y de brindar un correcto flujo de aire.</p>
+
+      <p><strong>Disipador / Refrigeración líquida:</strong> todo procesador debe estar convenientemente refrigerado
+        por, al menos, el disipador "de serie". Si se quiere mejorar la temperatura de funcionamiento, se puede optar
+        por un disipador superior o una RL.</p>
+      <h3>Tu Pc a piezas siempre a la última</h3>
+      <p>
+        La tecnología evoluciona a pasos agigantados, y esa gráfica que antaño era capaz de correr los juegos más
+        exigentes con solvencia ahora sufre para mover la última novedad a la que estás deseando viciarte. No hay que
+        desesperar, todo tiene solución y en la categoría de <a href="graficas.html"><strong>tarjetas
+            gráficas</strong></a> seguro que la encuentras.</p>
+      <p>Del mismo modo, es más que probable que tu disco duro esté al límite de sus posibilidades con tanta foto,
+        música, vídeo, programas y juegos. Antes de borrar las 1000 fotos en RAW de tus últimas vacaciones o de
+        deshacerte de tu aplicación predilecta para editar vídeo, piensa en hacerte con un nuevo disco duro, pues los
+        hay de todas las capacidades y precios. Asimismo, contamos con memorias RAM, procesadores, placas base y demás
+        piezas que constituyen la esencia de toda buena máquina.</p>
+      <h3>Para sobremesa y también para portátiles</h3>
+      <p>Los componentes de ordenador tradicionalmente han estado asociados a la ampliación, actualización y/o
+        reparación de equipos de sobremesa. Sin embargo, cada vez son más los fabricantes que desarrollan productos
+        específicos para portátiles, como pueden ser discos duros, bases de ventilación, adaptadores Bluetooth, RAM…</p>
+      <h3>No nos olvidemos del software</h3>
+      <p>¿De qué nos sirve un buen hardware si no tenemos <a href="software.html"><strong>software</strong></a>? De
+        poco, desde luego. Por esta razón, disponemos de un variado catálogo de sistemas operativos, antivirus y
+        herramientas con los que sacar todo el partido a tu ordenador.</p>
+    </span>
+    <span id="span2">
+      <ul>
+        <li>Pago seguro</li>
+        <li>Devolución 14 días</li>
+        <li>
+          Financiación flexible
+        </li>
+        <li>
+          Asesoramiento técnico
+        </li>
+      </ul>
+    </span>
+    <span id="span3">
+      <div><img src="./img/pagos.png"
+          alt="Metodos de pago aceptados: Paypal, Visa, MasterCard, Maestro, American Express"></div>
+    </span>
+  </section>
+
+  <!-- Fin de los spans -->
+  <!-- Inicio del pie de página -->
+  <footer>
+    <ul>
+      <h4 class="title">Información</h4>
+      <a href="null"> > <li>¿Quiénes somos?</li></a>
+      <a href="null"> > <li>Formas de pago y entrega </li></a>
+      <a href="null"> > <li> Devoluciones y reembolsos </li></a>
+      <a href="null"> > <li> Términos y condiciones </li></a>
+      <a href="null"> > <li> Aviso legal</li></a>
+      <a href="null"> > <li>Protección de datos </li></a>
+      <a href="null"> > <li>¿Cómo comprar?</li></a>
+      <a href="null"> > <li>Opiniones reales de clientes</li></a>
+      <a href="null"> > <li> Calendario de aperturas </li></a>
+      <a href="null"> > <li> Trabaja con nosotros </li></a>
+      <a href="null"> > <li>Formas de pago y entrega </li></a>
+    </ul>
+    <div>
+      <h4 class="title">¿Dónde estamos?</h4>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d653680.3270013247!2d-3.297809123567526!3d40.4405707026119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229803961c759%3A0x696418d682aa619c!2sPrometeo%20by%20thePower%20%7C%20Arturo%20Soria!5e0!3m2!1ses!2ses!4v1751918885951!5m2!1ses!2ses"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <ul>
+      <h4 class="title">Contáctanos</h4>
+      <li> PC Upgrade Computers S.L.</li>
+      <li>C. de Arturo Soria, 245, Cdad. Lineal, 28033 Madrid España</li>
+
+      <li>
+        Llámanos: 999.99.99.99
+      </li>
+      <li>
+        WhatsApp: 999.99.99.99
+      </li>
+      <li>
+        web@pcupgrade.es
+      </li>
+    </ul>
+
+  </footer>
+  <!-- Fin del pie de página -->
+  <!-- Copyright -->
+  <p id="registro">
+    PC Upgrade Computers - &copy; Copyright 2003 - 2025. Todos los derechos reservados
+  </p>
+</body>
+
 </html>
