@@ -757,96 +757,69 @@ footer {
   }
 }
 
-footer > ul {
+footer > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > div > ul {
   list-style: none;
-  width: 25%;
+  align-self: start;
+  padding-left: 18%;
 }
 
 @media (max-width: 670px) {
-  footer > ul {
+  footer > div > ul {
     width: 100%;
     align-self: start;
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
 .title {
-  font-size: 21px;
+  font-size: 23px;
   color: var(--secondaryColor);
+  margin-left: -30px;
   padding-bottom: 20px;
-  padding-left: 50px;
 }
 
-footer > ul > a {
+@media (max-width: 670px) {
+  .title {
+    padding-top: 7%;
+  }
+}
+
+footer > div > ul > li {
   display: flex;
-  text-decoration: none;
-  font-family: WebSymbolsRegular;
   color: var(--secondaryColor);
-}
-
-@media (max-width: 670px) {
-  footer > ul > a {
-    justify-content: start;
-  }
-}
-
-footer > ul > a:hover {
-  animation: moveArrow 50ms linear;
-  animation-fill-mode: forwards;
-}
-
-footer > ul > a:hover {
-  color: var(--thirdColor);
-}
-
-footer > ul > a:hover li {
-  color: var(--thirdColor);
-}
-
-footer > ul > a > li {
-  text-decoration: none;
-  color: var(--secondaryColor);
-  font-size: 18px;
-  padding-left: 5px;
-}
-
-@media (max-width: 670px) {
-  footer > ul > a > li {
-    font-size: 14px;
-  }
-}
-
-footer > ul > li {
+  font-weight: bold;
   font-size: 18px;
   color: var(--secondaryColor);
   line-height: 1.5;
 }
 
 @media (max-width: 670px) {
-  footer > ul > li {
-    font-size: 14px;
+  footer > div > ul > li {
+    padding-left: 13%;
+    font-size: 16px;
   }
 }
 
-footer > div {
-  width: 25%;
+#informacion > ul > li:hover {
+  animation: moveArrow 50ms linear;
+  animation-fill-mode: forwards;
 }
 
-@media (max-width: 670px) {
-  footer > div {
-    width: 100%;
-    margin: 8%;
-  }
+#informacion > ul > li:hover {
+  color: var(--thirdColor);
 }
 
-footer > div > h4 {
-  text-align: center;
-}
-
-@media (max-width: 670px) {
-  footer > div > h4 {
-    text-align: start;
-  }
+footer > div > ul > li > a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+  padding-left: 5px;
 }
 
 iframe {
